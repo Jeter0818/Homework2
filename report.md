@@ -1,8 +1,10 @@
 # Homework 2 作業報告
 
 ## 1. 解題說明
+
 **核心想法**
-    - 這次作業主要要實作一個用動態陣列（Dynamic Array）表示的多項式類別 Polynomial。多項式的每一項用 Term 結構來代表，裡面包含兩個重要資訊：
+這次作業主要要實作一個用動態陣列（Dynamic Array）表示的多項式類別 Polynomial。多項式的每一項用 Term 結構來代表，裡面包含兩個重要資訊：
+
     - coef (float)：非零項的係數。
     - exp (int)：非負整數的指數。
     在 Polynomial 類別中，我們用 Term* termArray 動態陣列來儲存所有的非零項，並透過 capacity 記錄目前陣列最大容量、terms 紀錄當前儲存的非零項數量。
