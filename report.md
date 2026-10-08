@@ -46,4 +46,4 @@
 - 量測觀察：當項數放大 10 倍時，乘法的執行時間大約增加 100 倍，符合多項式乘法時間複雜度 $O(m \times n)$ 的理論預測。
 
 ## 5. 心得討論
-    在寫 Polynomial 時，我深刻體會到為什麼需要遵守 Rule of Three（建構子、複製建構子、解構子與 assignment operator）。一開始沒有寫 Copy Constructor 時，只要把多項式當作參數傳進函式，程式就會因為 Shallow Copy 導致陣列被重複釋放而當機。另外，在寫 Mult 乘法時，要記得自動合併相同指數的項（Like Terms），不然陣列容量很容易爆掉。
+在寫 Polynomial 時，我深刻體會到為什麼需要遵守 Rule of Three（建構子、複製建構子、解構子與 assignment operator）。一開始沒有寫 Copy Constructor 時，只要把多項式當作參數傳進函式，程式就會因為 Shallow Copy 導致陣列被重複釋放而當機。另外，在寫 Mult 乘法時，要記得自動合併相同指數的項（Like Terms），不然陣列容量很容易爆掉。
